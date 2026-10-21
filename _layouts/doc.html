@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'ja' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<link rel="icon" href="/icon.png">
+<style>
+  :root {
+    --bg: #0b0a1a;
+    --card: #17152b;
+    --text: #f2f0ff;
+    --muted: #a49fc4;
+    --accent: #8b6cff;
+    --line: #2a2745;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.8;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  .back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; font-size: 14px; }
+  .back img { width: 24px; height: 24px; border-radius: 6px; }
+  h1 { font-size: 26px; line-height: 1.4; margin: 24px 0 8px; }
+  h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 8px; }
+  h3 { font-size: 16px; margin: 24px 0 4px; }
+  p, li { color: var(--text); }
+  a { color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--line); margin: 32px 0; }
+  code { background: var(--card); padding: 1px 6px; border-radius: 4px; }
+  blockquote { margin: 16px 0; padding: 8px 16px; background: var(--card); border-radius: 8px; color: var(--muted); }
+  ul { padding-left: 1.4em; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="/"><img src="/icon.png" alt="">Gacha Chord</a>
+  {{ content }}
+  <footer>© 2026 tamama9018</footer>
+</main>
+</body>
+</html>
